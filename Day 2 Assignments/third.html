@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formatng Date</title>
+    </head> 
+    <body>
+            <time id="date"></time>
+        <script>
+ 
+            var currentDate = new Date(),
+            day = currentDate.getDate(),
+            month = currentDate.getMonth() + 1,
+            year = currentDate.getFullYear(),
+            date = day + "/" + month + "/" + year;  //DD/MM/YYYY
+            date1= day + "-" + month + "-" + year;  //DD-MM-YYYY
+           date2= month + "/" + day + "/" + year;   //MM/DD/YYYY
+           date3= month + "-" + day + "-" + year;   //MM-DD-YYYY
+           document.getElementById("date").innerHTML = date;
+           document.write("<br/>"); 
+           document.write(date1);
+           document.write("<br/>"); 
+           document.write(date2);
+           document.write("<br/>"); 
+           document.write(date3);
+        </script>
+    </body>
+</html>
