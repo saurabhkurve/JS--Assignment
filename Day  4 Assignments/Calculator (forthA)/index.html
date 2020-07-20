@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <!-- Opening a HTML Form. -->
+<form name="my_cal">
+    <script src="calculator.js"></script>
+    <!-- Here user will enter 1st number. -->
+    Number 1: <input type="text" name="first"> 
+      
+     
+    <!-- Here user will enter 2nd number. -->
+    Number 2: <input type="text" name="second"> <br><br>
+     
+     
+    <!-- Here result will be displayed. -->
+    Get Result: <input type="text" name="total"> <br>
+     
+    <br> 
+    <input type="button" value="ADD" onclick="javascript:addition();">
+    <input type="button" value="SUB" onclick="javascript:subtraction();">
+    <input type="button" value="MUL" onclick="javascript:multiply();">
+    <input type="button" value="DIV" onclick="javascript:division();"><br><br>
+
+<!-- 
+   Enter number to get Square Root:<input type="text" name="sqroot">
+   Get Square Root: <input type="text" name="result1"> <br> 
+   <input type="button" value="Square Root" onclick="javascript:squar();"> -->
+    <!-- <script>
+        function sroot(){
+            let sq=Number(document.my_cal.sroot.value);
+            let res=math.sqrt(sq);
+            document.my_cal.result1.value=res;
+        }
+    </script>
+   -->
+
+   
+   <script>
+   function calcsqrt(form) 
+   {
+       var number=form.square.value;
+       var ans=Math.sqrt(number);
+       if (number<0) ans="Invalid";
+       form.res.value=ans;
+   }
+ 
+</script>
+  Enter Number to Find Square Root : <input name="square" type="text" size="15"/>
+
+   <input type="button" onclick="calcsqrt(this.form)" value="Find the Square Root"/>
+ <br /><br /><font  > 
+    The Square Root Value is: <input name="res" type="text" size="20"/><br /><br />
+</form>
+</body>
+</html>
