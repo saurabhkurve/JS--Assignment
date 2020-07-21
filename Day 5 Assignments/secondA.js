@@ -86,7 +86,8 @@ console.log(user1);
 admin.addCourse(user1,"C++");
 
 
-admin.remoCourse(user1,0);
+admin.remoCourse(user1,0
+                "Python");
 console.log(user1);
 
 // admin.removeCourse(user1,"C++");
